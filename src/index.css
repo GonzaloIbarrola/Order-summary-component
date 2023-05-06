@@ -1,0 +1,33 @@
+@tailwind base;
+  @layer base {
+    body {
+      @apply flex justify-center items-center h-screen bg-patternMobile bg-no-repeat bg-bgColor bg-contain sm:bg-patternDesktop
+    }
+    section {
+      @apply bg-white sm:w-[450px] sm:h-[697px] h-[567px] w-[327px] rounded-[20px] overflow-hidden shadow-container
+    }
+    article {
+      @apply flex flex-col items-center px-6 py-8 gap-6 sm:gap-8 sm:px-12 sm:pt-[45px] sm:pb-12
+    }
+    h1 {
+      @apply font-black text-[22px] mb-[17px] sm:text-[28px]
+    }
+    p,span,a {
+      @apply text-[#717FA6]
+    }
+    h3 {
+      @apply font-black
+    }
+    h1,h3 {
+      @apply text-[#1F2E55]
+    }
+    div>h3,span {
+      @apply text-base
+    }
+    button {
+      @apply h-[50px] bg-[#382AE1] w-full rounded-[11px] text-white font-black text-[15px] shadow-btn hover:bg-hover
+    }
+  }
+
+@tailwind components;
+@tailwind utilities;
